@@ -13,8 +13,7 @@ module.exports = {
     WHATSAPP: process.env.WHATSAPP,
     VK: process.env.VK,
     OUR_MAIL: process.env.OUR_MAIL,
-    HASH_ROCKET_CRM: process.env.HASH_ROCKET_CRM,
-    NODE_OPTIONS: '--openssl-legacy-provider'
+    HASH_ROCKET_CRM: process.env.HASH_ROCKET_CRM
   },
   target: 'serverless',
   poweredByHeader: false
