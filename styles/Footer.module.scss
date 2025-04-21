@@ -1,0 +1,122 @@
+.footer {
+      z-index: 1;
+    position: relative;
+
+  height: 182px;
+  background: #2f2f2f;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .link {
+      color: #fff;
+      font-size: 16px;
+      padding: 0 16px;
+    }
+  }
+  .sociol_cont {
+    display: flex;
+    align-items: center;
+
+    .inst {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(90deg, #348f50 0%, #56b4d3 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+    }
+    .pnone {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(90deg, #348f50 0%, #56b4d3 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 19px;
+    }
+    .text_p {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: right;
+      color: #FFFFFF;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    height: 370px;
+    background: #2f2f2f;
+    .container {
+      padding: 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .link {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+    .phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      font-size: 34px;
+      .icon {
+        margin-right: 0px;
+        color: #348f50;
+      }
+    }
+  }
+}
+@media (max-width: 766px) {
+  .footer {
+    display: none;
+
+    height: 370px;
+    background: #2f2f2f;
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .link {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+    .phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+
+      .icon {
+        margin-right: 0px;
+        color: #348f50;
+      }
+    }
+  }
+}
+
+
+
+// from header
+
+
+

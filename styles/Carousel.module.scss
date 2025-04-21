@@ -1,0 +1,522 @@
+.galery {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 593px;
+    height: 601px;
+    left: 220px;
+    bottom: 1010px;
+    background: url("/leafs_c.png") center/cover;
+    background-size: contain;
+    // background: transparent;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100vw / 1440 * 1095);
+    left: 0px;
+    bottom: calc(-100vw * .23);
+    background: url("/clouds.png") center/cover;
+    // background-size: contain;
+    // background: transparent;
+  }
+
+  .title {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    margin-bottom: 84px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 52px;
+
+    h3 {
+      z-index: 1;
+    }
+  }
+}
+
+.bg {
+  z-index: 2;
+  position: relative;
+  // border-radius: 18px;
+  // height: 100%;
+
+}
+
+.mb {
+  z-index: 1;
+  position: relative;
+  background: #f4f4f4;
+  border: 3px solid #ededed;
+  min-width: 350px;
+  display: none;
+}
+
+.carousel_button_group {
+  background: #F4F4F4;
+  position: relative;
+  width: 526px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  border-radius: 15px;
+  border: 3px solid #EDEDED;
+
+  P {
+    background: #ffffff;
+    border: 3px solid #f4f4f4;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 15px 30px;
+    width: 345px;
+    color: #6b6b6b;
+  }
+
+  button {
+    padding: 0 10px;
+    background: transparent;
+    flex: 1;
+    border: none;
+    width: 70px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .btn_prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: linear-gradient(90deg, #64bf80 0%, #56b4d3 100%);
+    border-radius: 50px;
+  }
+
+  .btn_next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: linear-gradient(90deg, #64bf80 0%, #56b4d3 100%);
+    border-radius: 50px;
+  }
+}
+
+// tablet / mobile
+
+
+@media (max-width: 1100px) {
+  .galery {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      z-index: 0;
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 601px;
+      left: 210px;
+
+      bottom: -60px;
+      background: url("/leafs_c.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      left: 0px;
+      bottom: -170px;
+      background: url("/clouds.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+
+    .title {
+      position: relative;
+      z-index: 1;
+      margin: auto;
+      margin-bottom: 84px;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      font-size: 52px;
+
+      h3 {
+        z-index: 1;
+      }
+    }
+  }
+
+  .bg {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    // min-height: 400px;
+    // display: block;
+  }
+
+  .mb {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    display: none;
+  }
+
+  .carousel_button_group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // justify-content: space-between;
+    justify-content: center;
+    position: absolute;
+    bottom: -1%;
+    right: 0;
+
+    P {
+      background: #ffffff;
+      border: 3px solid #f4f4f4;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding: 15px 30px;
+      color: #6b6b6b;
+    }
+
+    button {
+      padding: 15px 10px;
+      background: transparent;
+      border: none;
+    }
+  }
+}
+
+
+@media (max-width: 965px) {
+  .galery {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      z-index: 0;
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 601px;
+      left: 210px;
+
+      bottom: -60px;
+      background: url("/leafs_c.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      left: 0px;
+      bottom: -170px;
+      background: url("/clouds.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+
+    .title {
+      position: relative;
+      z-index: 1;
+      margin: auto;
+      margin-bottom: 84px;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      font-size: 52px;
+
+      h3 {
+        z-index: 1;
+      }
+    }
+  }
+
+  .bg {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    height: 480px;
+    // display: block;
+  }
+
+  .mb {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    display: none;
+  }
+
+  .carousel_button_group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // justify-content: space-between;
+    justify-content: center;
+    position: absolute;
+    bottom: -1%;
+    right: 0;
+
+    P {
+      background: #ffffff;
+      border: 3px solid #f4f4f4;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding: 15px 30px;
+      color: #6b6b6b;
+    }
+
+    button {
+      padding: 15px 10px;
+      background: transparent;
+      border: none;
+    }
+
+  }
+}
+
+//  mobile
+@media (max-width: 766px) {
+  .galery {
+    margin-top: 50px;
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 601px;
+      left: 210px;
+      opacity: 0;
+
+      bottom: -60px;
+      background: url("/leafs_c.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 420px;
+      left: 0px;
+      bottom: -170px;
+      background: url("/clouds.png") center/cover;
+      // background-size: contain;
+
+      // background: transparent;
+    }
+
+    .title {
+      position: relative;
+      z-index: 1;
+      margin: auto;
+      margin-bottom: 84px;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      font-size: 32px;
+
+      h3 {
+        z-index: 1;
+      }
+    }
+  }
+
+  .bg {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    display: none;
+  }
+
+  .mb {
+    z-index: 1;
+    position: relative;
+    background: #f4f4f4;
+    border: 3px solid #ededed;
+    min-width: 350px;
+    display: flex;
+    margin: 0 5px;
+    border-radius: 15px;
+  }
+
+  .carousel_button_group {
+    background: #F4F4F4;
+    position: relative;
+    width: 100%;
+    height: 84px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 0;
+    border: none;
+    padding: 0 15px;
+    flex-direction: column;
+
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    P {
+      font-size: 15px;
+      text-align: center;
+      width: 100%;
+      background: #ffffff;
+      border: 3px solid #f4f4f4;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding: 10px 20px;
+      color: #6b6b6b;
+      line-height: 25px;
+    }
+
+    button {
+      padding: 10px 0px;
+      background: transparent;
+      width: auto;
+      border: none;
+    }
+
+    .btn_prev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      background: linear-gradient(90deg, #64bf80 0%, #56b4d3 100%);
+      border-radius: 15px;
+    }
+
+    .btn_next {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      background: linear-gradient(90deg, #64bf80 0%, #56b4d3 100%);
+      border-radius: 15px;
+    }
+  }
+
+  .mob_gal {
+    text-align: center;
+
+    div {
+      padding-bottom: 140px;
+      padding-top: 10px;
+
+      P {
+        display: inline-block;
+        background: #ffffff;
+        border: 3px solid #f4f4f4;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 10px 20px;
+        color: #6b6b6b;
+      }
+
+      img {
+        padding: 15px 15px 0;
+      }
+    }
+  }
+}
+
+.airPhoto {
+  .video_container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px 0;
+
+    .btns {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1000;
+      cursor: pointer;
+      height: 400px;
+
+      div {
+        img {
+          // width: 100%;
+          position: relative;
+          padding: 10px;
+          margin-top: 200px;
+          margin-right: 8px;
+          height: 390px;
+          max-width: 355px;
+
+        }
+
+        .btn_img {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          top: 40%;
+          left: 50%;
+          transform: translateY(-30%) translateX(-50%);
+          pointer-events: none;
+        }
+      }
+
+      .show {
+        display: block;
+      }
+    }
+
+    .video {
+      padding: 15px 20px;
+      width: 99%;
+      height: 100%;
+      display: none;
+    }
+
+  }
+}

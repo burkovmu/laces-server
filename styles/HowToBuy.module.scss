@@ -1,0 +1,182 @@
+.howtobuy {
+  position: relative;
+  padding-top: 280px;
+  background: #f5f5f5;
+  padding-bottom: 220px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 361px;
+    height: 903px;
+    right: 10px;
+
+    bottom: 100px;
+    background: url("/leafs_r_buy.png") center/cover;
+    background-size: contain;
+    // background: transparent;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 276px;
+    height: 830px;
+    left: -2px;
+
+    bottom: 100px;
+    background: url("/leafs_l_buy.png") center/cover;
+    background-size: contain;
+    // background: transparent;
+  }
+  .title {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 93px;
+    h3 {
+      font-size: 52px;
+      line-height: 67.6px;
+      margin-bottom: 28px;
+      color: #333333;
+    }
+    p {
+      width: 506px;
+      line-height: 28px;
+      font-size: 18px;
+      color: #6b6b6b;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+// tablet
+@media (max-width: 1200px) {
+  .howtobuy {
+    position: relative;
+    padding-top: 115px;
+    margin-bottom: 0px;
+    background: #f5f5f5;
+    min-height: 1780px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 361px;
+      height: 903px;
+      right: 10px;
+
+      bottom: 100px;
+      background: url("/leafs_r_buy.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 276px;
+      height: 830px;
+      left: -2px;
+
+      bottom: 100px;
+      background: url("/leafs_l_buy.png") center/cover;
+      background-size: contain;
+      // background: transparent;
+    }
+    .title {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 93px;
+      h3 {
+        font-size: 52px;
+        margin-bottom: 28px;
+        line-height: 67.6px;
+      }
+      p {
+        width: 506px;
+        line-height: 28px;
+        font-size: 18px;
+        color: #6B6B6B;
+      }
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: 800px) {
+  .howtobuy {
+    position: relative;
+    padding-top: 115px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+    background: #f5f5f5;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 361px;
+      height: 903px;
+      right: 10px;
+
+      bottom: 100px;
+      background: none;
+      background-size: contain;
+      // background: transparent;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 830px;
+      left: -2px;
+
+      bottom: 100px;
+      background: none;
+      background-size: contain;
+      // background: transparent;
+    }
+    .title {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 51px;
+      h3 {
+        font-size: 35px;
+        line-height: 45px;
+        font-weight: 700;
+      }
+      p {
+        width: 100%;
+        line-height: 28px;
+        font-size: 16px;
+        color: #6B6B6B;
+        line-height: 25px;
+        font-weight: 400;
+      }
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
